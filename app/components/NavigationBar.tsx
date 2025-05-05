@@ -67,12 +67,12 @@ const NavigationBar: React.FC<NavigationBarProps> = ({ activeSection }) => {
         >
           <div className="flex items-center">
             <img
-              src="./ucefLogo.png"
+              src="./NeelanshLogo.png"
               alt="Logo"
               className="h-14 w-14"
             />
             <span className="gradient-text bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-              Youssef
+              Neelansh Sahai
             </span>
           </div>
         </motion.a>

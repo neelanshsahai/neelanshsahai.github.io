@@ -57,7 +57,7 @@ export default function Portfolio() {
           className="flex flex-col items-center"
         >
           <motion.img
-            src="./ucefLogo.png"
+            src="./NeelanshLogo.png"
             alt="Logo"
             className="w-20 h-20"
             initial={{ opacity: 0, scale: 0.5 }}

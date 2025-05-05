@@ -44,7 +44,7 @@ const useTypewriter = (text: string, speed: number = 100) => {
 };
 
 const HeroSection: React.FC<HeroProps> = ({ data }) => {
-  const { displayText, isDone } = useTypewriter(data.about, 30);
+  const { displayText, isDone } = useTypewriter(data.about, 10);
   
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -136,7 +136,7 @@ const HeroSection: React.FC<HeroProps> = ({ data }) => {
             <motion.div 
               className="flex flex-wrap gap-4 justify-center md:justify-start"
               variants={itemVariants}
-            >
+            > 
               <motion.a
                 href={`mailto:${data.contact.email}`}
                 className="px-6 py-3 bg-primary hover:bg-primary-dark text-white rounded-lg shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all duration-300 flex items-center gap-2"

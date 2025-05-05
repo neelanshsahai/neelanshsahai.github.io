@@ -5,10 +5,10 @@ export const RESUME_DATA = {
   location: "Bengaluru, India",
 
   about:
-    "Motivated software developer with a strong track record of successfully completing various projects. Proficient in various programming languages and technologies, including C, C++, and web development technologies (HTML, CSS, JavaScript). Skilled in areas such as file handling, multithreading, game development, virtualization, and networking. Strong problem-solving abilities and a solid understanding of software development principles. Committed to continuous learning and delivering high-quality solutions. Ready to contribute expertise to new challenges.",
+    "A Senior Software Engineer with 6 years of experience, including 3+ years at Google, where I've helped shape core Android features like Passkeys, Picture-in-Picture, and Per-App Language Preferences. My expertise lies in Kotlin, Jetpack Compose, MVVM, and scalable architecture, with a strong focus on building clean, performant, and maintainable applications. I've led teams, modernized legacy codebases, and delivered end-to-end solutions in remote-first environments. I'm also inclined towards the field of Frontend Development using Next, React and TypeScript.",
   summary:
     "As a software Developer with a background in computer systems, algorithms, and data structures, I have two years of experience in IT and two years of English studies under my belt. I am currently furthering my education in the 42 network for a Master Digital IT Architect degree. Coding and problem-solving through code are my passions, and I am excited to collaborate with talented programmers and expand my knowledge even more!",
-  avatarUrl: "./ysahih.png",
+  avatarUrl: "./NeelanshProfilePic.jpg",
 
   contact: {
     email: "96shubh@gmail.com",
@@ -134,7 +134,7 @@ export const RESUME_DATA = {
       startDate: "Oct 2021",
       endDate: "Present",
       description:
-        "Working on Android sample projects as well as Android OS features, focusing on building modular apps, using best state of the art tools and technologies and following the MAD best practices for architecture and UI",
+        "Working on developer facing android sample projects such as NowInAndroid, Socialite, PlatformSamples as well as a few Android OS features, focusing on building modular apps, using best state of the art tools and technologies and following the M.A.D. (Modern Android Development) best practices for architecture and UI. Majorly worked on Jetpack Compose, Coroutines, Flows, and Dagger-Hilt, etc.",
       skills: [
         "Kotlin",
         "Jetpack Compose",
@@ -149,9 +149,9 @@ export const RESUME_DATA = {
         "Clean Archtiecture",
       ],
       achievements: [
-        "Contribute towards the Android dessert releases. Features like Per-App Language Preferences in Android 13, Picture-In-Picture updates in Android 14, and Passkeys in Android 15 and 16.",
-        "Worked on Wear Sample and refactored the project to implement Material3 libraries.",
-        "Managed junior developers, and helped them complete their tasks by defining clear set of goals for them, task assignments and Code Reviews",
+        "Contributed towards some important Android OS level features consecutively for 4 dessert releases, like Per-App Language Preferences (based on Localization and Internationalization) in Android 13, Picture-In-Picture (Based on System UI) updates in Android 14, and Restore Credentials (Based on Passkeys and Identity) in Android 15 and 16.",
+        "Worked on samples like NowInAndroid, Socialite, Platform Samples, WearOS Samples, and Health Samples to implement the latest Android features and refactor legacy code to follow the latest best practices.",
+        "Mentored junior developers, and helped them complete their tasks by helping them define clear set of goals and Code Reviews. Helped them with their onboarding process and provided them with the necessary resources to get started.",
       ],
     },
     {
@@ -162,7 +162,7 @@ export const RESUME_DATA = {
       startDate: "May 2021",
       endDate: "Oct 2021",
       description:
-        "Working on front-end development projects for clients in the QHSE sector, focusing on secure, scalable web applications.",
+        "Grab being a tech giant in the South-East Asia region, had more than 100 million unique users. This scale of userbase came along with the neccessity of having a TDD (Test Driven Development). While at Grab, I worked on GrabTaxi's finance module, which was responsible to manage all of the payments on the app. Tech Stacjk used was Kotlin, RxJava, Coroutines, LiveData, Views, ViewBinding, DataBinding, Mockito, JUnit, Dagger-2, Firebase, Unit Testing, etc.",
       skills: [
         "Kotlin",
         "RxJava",
@@ -175,11 +175,12 @@ export const RESUME_DATA = {
         "JUnit",
         "Dagger-2",
         "Firebase",
+        "Unit Testing",
+        "CI/CD",
       ],
       achievements: [
-        "Worked on Grab’s finance module, which was responsible to manage all of the payments on GrabTaxi app.",
-        "Worked on implementing new features, bug fixes and writing Unit Tests, and improved code coverage by 7%",
-        "Implemented new screens for the app using the given Figma files",
+        "Contributed towards the payments flow of the GrabTaxi app. Worked on implementing new features, bug fixes and developing new screens for the app using the given Figma files.",
+        "Wrote unit tests for the existing codebase as well as the new implementations, to ensure the quality and reliability of the app.",
       ],
     },
     {
@@ -190,7 +191,7 @@ export const RESUME_DATA = {
       startDate: "Aug 2019",
       endDate: "May 2021",
       description:
-        "Working on front-end development projects for clients in the QHSE sector, focusing on secure, scalable web applications.",
+        "Shipsy is a SaaS based company, which was responsible for providing the Logistics and Supply Chain Management solutions to their clients. Worked on a 4 android apps, majorly focussed on Java, Kotlin, Views, and MVVM architecture.",
       skills: [
         "React",
         "TypeScript",
@@ -202,10 +203,10 @@ export const RESUME_DATA = {
         "CI/CD",
         "REST APIs",
       ],
-      achievements: [
-        "Collaborated with cross-functional teams to deliver projects on time",
-        "Contributed to the development of a secure authentication system",
-        "Conducted code reviews and provided constructive feedback to peers",
+      achievements: [ 
+        "Contributed towards the development of 2 android app. Migrated the existing codebase from Java to Kotlin nad AndroidX, and refactored the code to follow the MVVM architecture.",
+        "Worked on implementing new features, fixing bugs and creating new screens for new functionalities/modules.",
+        "Built two new apps from scratch, architectured data flow and UI flow for these two apps, built the app using MVVM architecture, and  "
       ],
     },
     {
