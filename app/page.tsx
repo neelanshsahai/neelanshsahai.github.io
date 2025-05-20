@@ -9,7 +9,6 @@ import SkillsSection from './components/SkillsSection';
 import ProjectsSection from './components/ProjectsSection';
 import EducationSection from './components/EducationSection';
 import ContactSection from './components/ContactSection';
-import Footer from './components/Footer';
 import { useTheme } from './Contexts/ThemeContext';
 import { RESUME_DATA } from './data/resume-data';
 import ExperienceSection from './components/ExperienceSection';
@@ -160,8 +159,6 @@ export default function Portfolio() {
           />
         </motion.section>
       </motion.main>
-      
-      <Footer socialLinks={[...RESUME_DATA.contact.social]} />
     </div>
   );
 }

@@ -8,27 +8,11 @@ interface SkillsProps {
   skills: string[];
 }
 
-// Skill proficiency data (this would normally come from a backend/database)
-const SKILL_PROFICIENCY: Record<string, number> = {
-  "C": 95,
-  "C++": 90,
-  "JavaScript": 85,
-  "TypeScript": 80,
-  "Html": 90,
-  "Tailwind Css": 85,
-  "React": 80,
-  "Node.js/Next.js": 75,
-  "Docker": 70,
-  "Git": 85,
-  "Jira": 80,
-};
-
 // Categorized skills
 const SKILL_CATEGORIES = {
-  "Languages": ["C", "C++", "JavaScript", "TypeScript"],
-  "Frontend": ["Html", "Tailwind Css", "React", "Redux"],
-  "Backend": ["Node.js/Next.js", "Docker"],
-  "DevOps & Tools": ["Git", "Docker", "Jira"]
+  "Languages": ["Kotlin", "Java", "Python", "JavaScript", "TypeScript", "C", "C++"],
+  "Android": ["Android", "Gradle", "Jetpack Compose", "MVVM", "Coroutines", "Dagger-Hilt", "Retrofit", "RoomDB", "Firebase"],
+  "Other": ["Deep Learning", "React.js", "Next.js", "Git", "CI/CD"]
 };
 
 const SkillsSection: React.FC<SkillsProps> = ({ skills }) => {
@@ -37,9 +21,8 @@ const SkillsSection: React.FC<SkillsProps> = ({ skills }) => {
   const categories = [
     { id: "All", label: "All Skills", icon: <Code2Icon className="w-5 h-5" /> },
     { id: "Languages", label: "Languages", icon: <Code2Icon className="w-5 h-5" /> },
-    { id: "Frontend", label: "Frontend", icon: <LayoutDashboardIcon className="w-5 h-5" /> },
-    { id: "Backend", label: "Backend", icon: <ServerIcon className="w-5 h-5" /> },
-    { id: "DevOps & Tools", label: "DevOps & Tools", icon: <PenToolIcon className="w-5 h-5" /> },
+    { id: "Android", label: "Android", icon: <LayoutDashboardIcon className="w-5 h-5" /> },
+    { id: "Other", label: "Other", icon: <PenToolIcon className="w-5 h-5" /> },
   ];
 
   const filteredSkills = activeCategory === "All" 
@@ -75,18 +58,27 @@ const SkillsSection: React.FC<SkillsProps> = ({ skills }) => {
     
     // Map special cases
     const skillMap: Record<string, string> = {
-      "c": "c",
-      "c++": "cplusplus",
-      "html": "html5",
-      "tailwind css": "tailwindcss",
+      "kotlin": "kotlin",
+      "java": "java",
+      "android": "android",
+      "gradle": "gradle",
+      "jetpack compose": "jetpack compose",
+      "firebase": "firebase",
+      "mvvm": "androidstudio",
+      "coroutines": "kotlin",
+      "dagger-hilt": "androidstudio",
+      "retrofit": "networkx",
+      "roomdb": "sqldeveloper",
+      "python": "python",
+      "deeplearning": "illustrator",
       "javascript": "javascript",
+      "reactjs": "react",
+      "nextjs": "nextjs",
       "typescript": "typescript",
-      "react": "react",
-      "redux": "redux",
-      "nodejs/nextjs": "nextjs",
-      "jira": "jira",
-      "docker": "docker",
+      "c++": "cplusplus",
+      "c": "c",
       "git": "git",
+      "ci/cd": "githubactions",
     };
 
     return skillMap[skillLower] || skillLower;
@@ -145,7 +137,6 @@ const SkillsSection: React.FC<SkillsProps> = ({ skills }) => {
           viewport={{ once: true, margin: "-100px" }}
         >
           {filteredSkills.map((skill, index) => {
-            const proficiency = SKILL_PROFICIENCY[skill] || 75;
             const deviconClass = getDeviconClass(skill);
 
             return (
@@ -163,20 +154,6 @@ const SkillsSection: React.FC<SkillsProps> = ({ skills }) => {
                   </div>
                   <h3 className="text-xl font-semibold">{skill}</h3>
                 </div>
-
-                <div className="relative h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                  <motion.div
-                    className="absolute top-0 left-0 h-full bg-gradient-to-r from-primary to-secondary rounded-full"
-                    initial={{ width: 0 }}
-                    whileInView={{ width: `${proficiency}%` }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-                  />
-                </div>
-                <div className="flex justify-between mt-2 text-sm text-gray-600 dark:text-gray-400">
-                  <span>Proficiency</span>
-                  <span>{proficiency}%</span>
-                </div>
               </motion.div>
             );
           })}
@@ -190,25 +167,31 @@ const SkillsSection: React.FC<SkillsProps> = ({ skills }) => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.3 }}
         >
-          <h3 className="text-2xl font-semibold mb-6 text-center">Additional Skills & Methodologies</h3>
+          <h3 className="text-2xl font-semibold mb-6 text-center">Soft Skills</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              // "Git",
-              // "Docker",
-              "Linux",
-              "Socket Programming",
-              "Project Management",
+              "Communication",
+              "Public Speaking",
+              "Presentation Skills",
+              "Teamwork",
               "Problem Solving",
-              "Agile Methodology",
-              "Scrum",
-              // "Jira",
-              "Team Collaboration",
-              "CI/CD",
+              "Time Management",
+              "Agile Methodologies",
+              "Continuous Learning",
+              "Adaptability",
+              "Attention to Detail",
+              "Critical Thinking",
+              "Creativity",
+              "Project Management",
+              "Team Leadership",
+              "Mentoring",
+              "Collaboration",
+              "Conflict Resolution",
+              "Analytical Skills",
               "Code Review",
-              "Test-Driven Development",
-              "RESTful APIs",
-              "System Design",
-              "Technical Documentation"
+              "Documentation",
+              "Testing & Debugging",
+              "Version Control",
             ].map((skill, index) => (
               <motion.span
                 key={index}

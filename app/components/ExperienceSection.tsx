@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { BriefcaseIcon, CalendarIcon, MapPinIcon, CheckIcon } from 'lucide-react';
+import { BriefcaseIcon, CalendarIcon, MapPinIcon, CheckIcon, PointerOff, LucidePointer, ArrowBigRightDashIcon } from 'lucide-react';
 
 interface Experience {
   company: string;
@@ -144,7 +144,7 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experience, isRem
                         <ul className="space-y-1 text-left">
                           {exp.achievements.map((achievement, achIndex) => (
                             <li key={achIndex} className="flex items-start gap-2">
-                              <CheckIcon className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
+                              <ArrowBigRightDashIcon className="w-4 h-4 text-green-500 mt-1 flex-shrink-0" />
                               <span className="text-sm text-gray-600 dark:text-gray-300">
                                 {achievement}
                               </span>
@@ -159,20 +159,6 @@ const ExperienceSection: React.FC<ExperienceSectionProps> = ({ experience, isRem
             ))}
           </motion.div>
         </div>
-
-        {/* Quote at the bottom */}
-        <motion.div
-          className="mt-16 text-center"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-        >
-          <blockquote className="text-xl italic text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-            "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."
-          </blockquote>
-          <p className="mt-2 text-gray-600 dark:text-gray-400">― Albert Schweitzer</p>
-        </motion.div>
       </div>
     </div>
   );

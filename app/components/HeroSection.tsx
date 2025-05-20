@@ -148,7 +148,7 @@ const HeroSection: React.FC<HeroProps> = ({ data }) => {
               </motion.a>
               
               <motion.a
-                href="/resume.pdf"
+                href="./resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 border border-gray-300 dark:border-gray-600 hover:border-primary hover:text-primary dark:hover:border-primary-light dark:hover:text-primary-light rounded-lg transition-all duration-300 flex items-center gap-2"

@@ -2,10 +2,12 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLinkIcon, GithubIcon, CodeIcon } from 'lucide-react';
+import { PlayIcon, CodeIcon } from 'lucide-react';
+import { GitHubIcon } from './icons';
 
 interface Project {
   title: string;
+  shortDescription: string;
   description: string;
   techStack: string[];
   link?: {
@@ -56,11 +58,21 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
     },
   };
 
-  // Generate a random image for each project (for demo purposes)
-  // In a real project, you'd use actual project images
   const getProjectImage = (title: string) => {
-    const seed = title.charCodeAt(0) + title.length;
-    return `https://picsum.photos/seed/${seed}/600/400`;
+    switch (title.toLowerCase()) {
+      case "nutrak":
+        return "./nutrak.jpeg";
+      case "now in android":
+        return "./nowinandroid.jpg";
+      case "socialite":
+        return "./socialite.png";
+      case "riderapp":
+        return "./riderapp.jpg";
+      case "vehicle counter app":
+        return "./vehiclecounter.png";
+      case "rover - 8th sense":
+        return "./rover.png";
+    }
   };
 
   return (
@@ -156,7 +168,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
               
               <div className="p-5">
                 <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
-                  {project.description}
+                  {project.shortDescription}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.techStack.map((tech, techIndex) => (
@@ -187,7 +199,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                       className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary-light transition-colors"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      <GithubIcon className="w-5 h-5" />
+                      { project.link.label === "playstore" ? <PlayIcon className="w-5 h-5" /> : <GitHubIcon className="w-5 h-5" /> }
                     </a>
                   )}
                 </div>
@@ -248,8 +260,8 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ projects }) => {
                         rel="noopener noreferrer"
                         className="px-4 py-2 bg-primary text-white rounded-lg flex items-center gap-2 hover:bg-primary-dark transition-colors"
                       >
-                        <GithubIcon className="w-4 h-4" />
-                        View on GitHub
+                        { selectedProject.link.label === "playstore" ? <PlayIcon className="w-4 h-4" /> : <GitHubIcon className="w-4 h-4" />}
+                        { selectedProject.link.label === "playstore" ? "View on Playstore" : "View on GitHub"}
                       </a>
                     </div>
                   )}

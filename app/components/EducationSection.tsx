@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { GraduationCapIcon, CalendarIcon, BookOpenIcon } from 'lucide-react';
+import { GraduationCapIcon, CalendarIcon, BookOpenIcon, CreditCard } from 'lucide-react';
 
 interface Education {
   school: string;
@@ -9,6 +9,7 @@ interface Education {
   description: string;
   start: string;
   end: string;
+  certificate: boolean;
 }
 
 interface EducationSectionProps {
@@ -78,7 +79,7 @@ const EducationSection: React.FC<EducationSectionProps> = ({ education }) => {
               >
                 {/* Timeline point */}
                 <div className="absolute left-4 md:left-1/2 w-8 h-8 bg-white dark:bg-gray-800 rounded-full border-4 border-primary dark:border-primary-light transform -translate-x-1/2 flex items-center justify-center z-10">
-                  <GraduationCapIcon className="w-4 h-4 text-primary dark:text-primary-light" />
+                  { edu.certificate ? <CreditCard className="w-4 h-4 text-primary dark:text-primary-light" /> : <GraduationCapIcon className="w-4 h-4 text-primary dark:text-primary-light" /> }
                 </div>
 
                 {/* Content */}
@@ -89,17 +90,17 @@ const EducationSection: React.FC<EducationSectionProps> = ({ education }) => {
                     className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg"
                     whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)" }}
                   >
-                    <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-1">{edu.school}</h3>
-                    <p className="text-primary dark:text-primary-light font-medium mb-3">{edu.degree}</p>
-                    <div className="flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-4 justify-start md:justify-end">
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-1">{edu.degree}</h3>
+                    <p className="text-primary dark:text-primary-light font-medium mb-3">{edu.school}</p>
+                    <div className={`flex items-center gap-2 text-sm text-gray-600 dark:text-gray-400 mb-4 ${index % 2 === 0 ? 'justify-end' : 'justify-start'}`}>
                       <CalendarIcon className="w-4 h-4" />
                       <span>{edu.start} - {edu.end}</span>
                     </div>
                     
                     <div className="mt-4 bg-primary/10 dark:bg-primary/20 p-3 rounded-lg">
                       <div className="flex items-start gap-2">
-                        <BookOpenIcon className="w-4 h-4 text-primary dark:text-primary-light mt-1" />
-                        <p className="text-sm text-gray-700 dark:text-gray-300">
+                        <BookOpenIcon className="w-4 h-4 flex-shrink-0 text-primary dark:text-primary-light mt-1" />
+                        <p className="text-sm text-gray-700 dark:text-gray-300 flex-1">
                           {edu.description}
                         </p>
                       </div>

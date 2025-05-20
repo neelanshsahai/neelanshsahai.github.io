@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
-import { CodeIcon, BookOpenIcon, BrainCircuitIcon, GraduationCapIcon } from 'lucide-react';
+import { CodeIcon, BookOpenIcon, BrainCircuitIcon, Users } from 'lucide-react';
 
 interface AboutProps {
   data: {
@@ -50,9 +50,9 @@ const AboutSection: React.FC<AboutProps> = ({ data }) => {
       description: "Finding innovative solutions by thinking outside the box."
     },
     {
-      icon: <GraduationCapIcon className="w-6 h-6" />,
-      title: "Academic Focus",
-      description: "Pursuing a Master's Degree in IT Architecture in the 42 network."
+      icon: <Users className="w-6 h-6" />,
+      title: "Team Player",
+      description: "Collaborating effectively with others to achieve common goals."
     }
   ];
 
