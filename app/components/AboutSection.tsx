@@ -93,7 +93,7 @@ const AboutSection: React.FC<AboutProps> = ({ data }) => {
                 </p>
                 <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
                   <p className="font-medium text-gray-700 dark:text-gray-200">
-                    Currently pursuing my passion for programming in the 42 network, working toward a Master's Degree in IT Architecture.
+                    Currently exploring more in the domain of Frontend Development and iOS development.
                   </p>
                 </div>
               </div>
