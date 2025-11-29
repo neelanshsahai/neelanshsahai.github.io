@@ -131,7 +131,7 @@ export const RESUME_DATA = {
       shortDescription: "A sample app that showcases the latest Android features and best practices.",
       link: {
         label: "github.com/neelanshsahai",
-        href: "https://github.com/android/socialite",
+        href: "https://github.com/android/nowinandroid",
       },
     },
     {
@@ -142,7 +142,7 @@ export const RESUME_DATA = {
         " Contributed to this project as a part of my work at Google. Socialite is a simple chat application that was built to showcase implementation of the latest Android SysUI features like PiP, EdgeToEdge, implementation of CameraX libraries, etc. This project is a good sample app for developers who want to implement the latest SysUI features in their apps.",
       link: {
         label: "github.com",
-        href: "https://github.com/ysahih/inception",
+        href: "https://github.com/android/socialite",
       },
     },
     {
