@@ -5,7 +5,7 @@ export const RESUME_DATA = {
   location: "Bengaluru, India",
 
   about:
-    "A Senior Software Engineer with 6 years of experience, including 4+ years at Google, where I've helped shape core Android features like Passkeys, Picture-in-Picture, and Per-App Language Preferences. My expertise lies in Kotlin, Jetpack Compose, MVVM, and scalable architecture, with a strong focus on building clean, performant, and maintainable applications. I've led teams, modernized legacy codebases, and delivered end-to-end solutions in remote-first environments. I'm also inclined towards the field of Frontend Development using Next, React and TypeScript.",
+    "Currently a Staff Software Engineer at OKX with 7+ years of experience, including 4+ years at Google, where I've helped shape core Android features like Passkeys, Picture-in-Picture, and Per-App Language Preferences. My expertise lies in Kotlin, Jetpack Compose, MVVM, and scalable architecture, with a strong focus on building clean, performant, and maintainable applications. I've led teams, modernized legacy codebases, and delivered end-to-end solutions in remote-first environments. I'm also inclined towards the field of Frontend Development using Next, React and TypeScript.",
   summary:
     "As a Software Engineer with a background in Android development, I have a strong foundation in building scalable and maintainable applications. I am passionate about solving complex problems and continuously learning new technologies. My experience includes working with Kotlin, Java, Jetpack Compose, MVVM architecture, and various Android frameworks. I have a keen interest in exploring the latest advancements in Android development and contributing to open-source projects. Not limited to Android, I am also inclined towards the field of Frontend Development. I am always eager to take on new challenges and expand my skill set.",
   avatarUrl: "./NeelanshProfilePic.jpg",
@@ -26,7 +26,7 @@ export const RESUME_DATA = {
       },
       {
         name: "X",
-        url: "https://x.com/NeelanshSahai",
+        url: "https://x.com/neelansh_sahai",
         icon: XIcon,
       },
     ],
@@ -174,14 +174,39 @@ export const RESUME_DATA = {
 
   experience: [
     {
+      company: "OKX",
+      position: "Staff Software Engineer (Android)",
+      logo: 'https://zengo.com/wp-content/uploads/OKEx_300x300@x2.png',
+      location: "Singpore",
+      startDate: "May 2026",
+      endDate: "Present",
+      description:
+        "Working on OKX's DeFi platform which accounted for 80% of company's revenue. Worked on implementing new feature for Crypto wallets and the new CeDeFi platform for OKX. Majorly focussed on implementing business logic and networking logic in Rust for common utilization between Android and iOS, and worked on E2Es using in Python to improve page coverage to 70% from 60%.
+      skills: [
+        "Kotlin",
+        "Jetpack Compose",
+        "Rust",
+        "Python",
+        "Web3",
+        "Crypto Wallets",
+        "MVVM",
+        "Dagger-Hilt",
+        "Coroutines",
+      ],
+      achievements: [
+        "Working OKX’s Web3 Android team, closely working on both DeFi and CeFi"
+        "Working the initiative of AI adoption for day to day developer productivity across both Android and iOS teams"
+        "Working on Crypto Wallets, Rust migrations for Logic Layer and Networking Layer, and E2E tests using Python"
+    },
+    {
       company: "Google",
       position: "Senior Software Engineer (Android)",
       logo: 'https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png',
       location: "Bengaluru, India",
       startDate: "Oct 2021",
-      endDate: "Present",
+      endDate: "Apr 2026",
       description:
-        "Working on developer facing android sample projects such as NowInAndroid, Socialite, PlatformSamples as well as a few Android OS features, focusing on building modular apps, using best state of the art tools and technologies and following the M.A.D. (Modern Android Development) best practices for architecture and UI. Majorly worked on Jetpack Compose, Coroutines, Flows, and Dagger-Hilt, etc.",
+        "Worked on developer facing android sample projects such as NowInAndroid, Socialite, PlatformSamples as well as a few Android OS features, focusing on building modular apps, using best state of the art tools and technologies and following the M.A.D. (Modern Android Development) best practices for architecture and UI. Majorly worked on Jetpack Compose, Coroutines, Flows, and Dagger-Hilt, etc.",
       skills: [
         "Kotlin",
         "Jetpack Compose",
