@@ -371,7 +371,7 @@ export const RESUME_DATA = {
     {
       company: "Udacity",
       position: "Student Mentor and Project Reviewer",
-      logo: 'https://www.doit.com/wp-content/uploads/2021/01/udacity-logo.png',
+      logo: 'https://www.primarymarkets.com/wp-content/uploads/2023/10/Udacity-Circle-Logo.webp',
       location: "Remote",
       startDate: "Apr 2022",
       endDate: "Feb 2024",
@@ -397,7 +397,7 @@ export const RESUME_DATA = {
   {
       company: "Nutrition Tracking App",
       position: "Android Developer (Freelance Project)",
-      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Eo_circle_teal_white_letter-n.svg/1024px-Eo_circle_teal_white_letter-n.svg.png',
+      logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Eo_circle_green_white_letter-n.svg/960px-Eo_circle_green_white_letter-n.svg.png',
       location: "Remote",
       startDate: "Feb 2025",
       endDate: "Feb 2025",
