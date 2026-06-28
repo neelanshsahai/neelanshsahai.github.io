@@ -197,6 +197,7 @@ export const RESUME_DATA = {
         "Working OKX’s Web3 Android team, closely working on both DeFi and CeFi",
         "Working the initiative of AI adoption for day to day developer productivity across both Android and iOS teams",
         "Working on Crypto Wallets, Rust migrations for Logic Layer and Networking Layer, and E2E tests using Python",
+      ],
     },
     {
       company: "Google",
