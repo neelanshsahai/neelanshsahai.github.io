@@ -177,7 +177,7 @@ export const RESUME_DATA = {
       company: "OKX",
       position: "Staff Software Engineer (Android)",
       logo: 'https://zengo.com/wp-content/uploads/OKEx_300x300@x2.png',
-      location: "Singpore",
+      location: "Singapore",
       startDate: "May 2026",
       endDate: "Present",
       description:
