@@ -181,7 +181,7 @@ export const RESUME_DATA = {
       startDate: "May 2026",
       endDate: "Present",
       description:
-        "Working on OKX's DeFi platform which accounted for 80% of company's revenue. Worked on implementing new feature for Crypto wallets and the new CeDeFi platform for OKX. Majorly focussed on implementing business logic and networking logic in Rust for common utilization between Android and iOS, and worked on E2Es using in Python to improve page coverage to 70% from 60%.
+        "Working on OKX's DeFi platform which accounted for 80% of company's revenue. Worked on implementing new feature for Crypto wallets and the new CeDeFi platform for OKX. Majorly focussed on implementing business logic and networking logic in Rust for common utilization between Android and iOS, and worked on E2Es using in Python to improve page coverage to 70% from 60%.",
       skills: [
         "Kotlin",
         "Jetpack Compose",
